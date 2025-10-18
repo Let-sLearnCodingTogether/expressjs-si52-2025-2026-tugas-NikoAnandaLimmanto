@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "9e13029a-5354-4313-83eb-c5b09511f1ce",
+		"name": "Tugas Resep Makanan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49286939",
+		"_collection_link": "https://nikoanandalimmanto-2327240041-168345.postman.co/workspace/NIKO-ANANDA-LIMMANTO-2327240041~d3d9fa0b-92a1-4659-8b4b-d5bc4b7370c7/collection/49286939-9e13029a-5354-4313-83eb-c5b09511f1ce?action=share&source=collection_link&creator=49286939"
+	},
+	"item": [
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"recipeName\": \"Nasi Goreng Spesial\",\r\n  \"ingredients\": \"Nasi, telur, kecap, bawang, cabai\",\r\n  \"instructions\": \"Tumis bawang dan cabai, masukkan nasi, tambahkan kecap, aduk rata.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/resep",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"resep"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/resep",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"resep"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"recipeName\": \"Nasi Goreng Kampung\",\r\n  \"instructions\": \"Tumis bawang putih dan cabai, masukkan nasi, tambahkan kecap dan bumbu halus, aduk rata hingga wangi dan matang.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/resep/68f33e57f9f1cc152eb783a8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"resep",
+						"68f33e57f9f1cc152eb783a8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELATE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/resep/68f33e57f9f1cc152eb783a8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"resep",
+						"68f33e57f9f1cc152eb783a8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
